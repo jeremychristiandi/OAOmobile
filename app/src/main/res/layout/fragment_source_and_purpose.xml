@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_history"
+    android:id="@+id/main">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/overlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#80000000"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_job"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="50dp"
+            android:elevation="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cv_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="32dp">
+
+
+                <!-- Sumber Penghasilan Utama -->
+                <TextView
+                    android:id="@+id/tv_penghasilan_utama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/intersemibold"
+                    android:text="Sumber Penghasilan Utama"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <CheckBox
+                    android:id="@+id/cb_gaji_utama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Gaji"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_penghasilan_utama" />
+
+                <CheckBox
+                    android:id="@+id/cb_hasil_usaha_utama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Hasil Usaha"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_gaji_utama" />
+
+                <CheckBox
+                    android:id="@+id/pinjaman_utama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Pinjaman"
+                    app:layout_constraintStart_toEndOf="@+id/cb_hasil_usaha_utama"
+                    app:layout_constraintTop_toBottomOf="@+id/suami_istri_utama" />
+
+                <CheckBox
+                    android:id="@+id/cb_tunjangan_utama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Tunjangan"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_hasil_usaha_utama" />
+
+                <CheckBox
+                    android:id="@+id/keuntungan_bisnis_utama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Keuntungan Bisnis"
+                    app:layout_constraintStart_toEndOf="@+id/cb_tunjangan_utama"
+                    app:layout_constraintTop_toBottomOf="@+id/pinjaman_utama" />
+
+                <CheckBox
+                    android:id="@+id/suami_istri_utama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="56dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Suami/Istri"
+                    app:layout_constraintStart_toEndOf="@+id/cb_gaji_utama"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_penghasilan_utama" />
+
+                <CheckBox
+                    android:id="@+id/investasi_utama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Investasi"
+                    app:layout_constraintStart_toEndOf="@+id/suami_istri_utama"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_penghasilan_utama" />
+
+                <!-- Sumber Penghasilan Tambahan -->
+                <TextView
+                    android:id="@+id/tv_penghasilan_tambahan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="220dp"
+                    android:fontFamily="@font/intersemibold"
+                    android:maxLines="2"
+                    android:text="Sumber Penghasilan Tambahan \n(pilih lebih dari satu)"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_penghasilan_utama" />
+
+                <CheckBox
+                    android:id="@+id/hasil_usaha_tambahan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Hasil \nUsaha"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_penghasilan_tambahan" />
+
+
+                <CheckBox
+                    android:id="@+id/hasil_investasi_tambahan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Hasil \nInvestasi"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hasil_usaha_tambahan" />
+
+                <CheckBox
+                    android:id="@+id/pensiun_tambahan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Pensiun"
+                    app:layout_constraintEnd_toEndOf="@+id/suami_istri_tambahan"
+                    app:layout_constraintHorizontal_bias="0.411"
+                    app:layout_constraintStart_toEndOf="@+id/hasil_investasi_tambahan"
+                    app:layout_constraintTop_toBottomOf="@+id/suami_istri_tambahan" />
+
+                <CheckBox
+                    android:id="@+id/uang_sewa_tambahan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Uang \nSewa"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hasil_investasi_tambahan" />
+
+                <CheckBox
+                    android:id="@+id/hibah_tambahan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Hibah"
+                    app:layout_constraintStart_toEndOf="@+id/pensiun_tambahan"
+                    app:layout_constraintTop_toBottomOf="@+id/warisan_tambahan" />
+
+                <CheckBox
+                    android:id="@+id/warisan_tambahan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Warisan"
+                    app:layout_constraintStart_toEndOf="@+id/suami_istri_tambahan"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_penghasilan_tambahan" />
+
+                <CheckBox
+                    android:id="@+id/undian_tambahan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Undian"
+                    app:layout_constraintEnd_toEndOf="@+id/pensiun_tambahan"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/pensiun_tambahan"
+                    app:layout_constraintTop_toBottomOf="@+id/pensiun_tambahan" />
+
+                <CheckBox
+                    android:id="@+id/lainnya_tambahan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/uang_sewa_tambahan" />
+
+                <EditText
+                    android:id="@+id/lainnya_tambahan_edit"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+
+                    android:layout_marginEnd="8dp"
+                    android:hint="@string/lainnya"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.058"
+                    app:layout_constraintStart_toEndOf="@+id/lainnya_tambahan"
+                    app:layout_constraintTop_toBottomOf="@+id/undian_tambahan" />
+
+                <CheckBox
+                    android:id="@+id/suami_istri_tambahan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Suami/Istri"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_penghasilan_tambahan"
+                    app:layout_constraintHorizontal_bias="0.883"
+                    app:layout_constraintStart_toStartOf="@+id/tv_penghasilan_tambahan"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_penghasilan_tambahan" />
+
+                <Button
+                    android:id="@+id/btn_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:text="@string/btn_next"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lainnya_tambahan_edit" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:elevation="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_back"
+            android:layout_width="48dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="4dp"
+            app:layout_constraintBottom_toTopOf="@+id/cv_job"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cv_job"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/btn_close"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="center"
+                android:src="@drawable/baseline_arrow_back_ios_24"
+                app:tint="@android:color/black" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

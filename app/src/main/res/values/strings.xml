@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">LivenessFeature</string>
+    <string name="take_photo">Take a photo to make sure it was you</string>
+    <string name="started">Let\'s Get Started</string>
+    <string name="verify_btn">Verify</string>
+    <string name="capture">CAPTURE</string>
+    <string name="upload_gallery">Upload from gallery</string>
+    <string name="result_title">Result</string>
+    <string name="verifiedlno">You are verified!</string>
+    <string name="liveness_score">Liveness Confidence Score:</string>
+    <string name="form_opening_account">Form Opening Account</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="tempat_dan_tanggal_lahir">Tempat dan Tanggal Lahir</string>
+    <string name="jenis_kelamin">Jenis Kelamin :</string>
+    <string name="status_pernikahan">Status Pernikahan :</string>
+    <string name="domisili">Domisili</string>
+    <string name="alamat_sesuai_identitas">Alamat sesuai identitas</string>
+    <string name="email">E-mail</string>
+    <string name="agama">Agama</string>
+    <string name="no_ktp">No. KTP</string>
+    <string name="pendidikan_terakhir">Pendidikan Terakhir</string>
+    <string name="nama_ibu_kandung">Nama Ibu Kandung</string>
+    <string name="alamat_tinggal_sekarang">Alamat Tinggal Sekarang</string>
+    <string name="btn_next">Next</string>
+    <string name="pendaftaran_rekening_efek">Pendaftaran Rekening Efek</string>
+    <string name="text_otp">Masukkan kode OTP yang dikirim ke e-mail anda</string>
+    <string name="kode_otp">Kode OTP</string>
+    <string name="logo">Logo</string>
+
+    <string-array name="gender">
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </string-array>
+    <string-array name="status_pernikahan">
+        <item>Menikah</item>
+        <item>Belum Menikah</item>
+        <item>Janda</item>
+        <item>Duda</item>
+    </string-array>
+    <string-array name="identitas">
+        <item>KTP</item>
+        <item>Paspor</item>
+    </string-array>
+
+    <string-array name="penghasilan_pertahun">
+        <item>&lt;10 juta</item>
+        <item>10 - &lt;50 juta</item>
+        <item>50 - &lt;100 juta</item>
+        <item>100 - &lt;500 juta</item>
+        <item>500 - &lt;1000 juta</item>
+        <item>≥1000 juta</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <string-array name="penghasilan_tambahan_pertahun">
+        <item>&lt;10</item>
+        <item>10 - &lt;50</item>
+        <item>50 - &lt;100</item>
+        <item>100 - &lt;500</item>
+        <item>500 - &lt;1000</item>
+        <item>≥1000</item>
+        <item>Lainnya</item>
+    </string-array>
+
+
+    <string name="no_identitas">No. KTP/ Paspor</string>
+    <string name="no_hp">No. Hp</string>
+    <string name="no_telepon_rumah">No. Telepon Rumah</string>
+    <string name="warganegara">Kewarganegaraan</string>
+    <string name="jenis_identitas_tipe">Jenis Identitas :</string>
+    <string name="btn_back">back button</string>
+    <string name="nama_perusahaan">Nama Perusahaan</string>
+    <string name="alamat_perusahaan">Alamat Perusahaan</string>
+    <string name="kode_pos">Kode Pos</string>
+    <string name="no_telp_perusahaan">No. Telpon Perusahaan</string>
+    <string name="job_type">Jenis Pekerjaan</string>
+    <string name="email_perusahaan">Email Perusahaan</string>
+    <string name="jabatan">Jabatan</string>
+    <string name="bidang_usaha">Bidang Usaha</string>
+    <string name="lama_bekerja">Lama Bekerja</string>
+    <string name="penghasilan_per_tahun">Penghasilan Per Tahun:</string>
+    <string name="penghasilan_tambahan_pertahun">Penghasilan Tambahan Pertahun:</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="e_mail">E-mail</string>
+    <string name="text_on_email_fragment">Masukkan email yang sudah anda daftarkan</string>
+    <string name="submit_btn">Submit</string>
+    <string name="lainnya">Lainnya</string>
+
+</resources>
