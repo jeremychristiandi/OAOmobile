@@ -1,8 +1,18 @@
+import java.io.FileInputStream
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
     id ("kotlin-kapt")
 }
+
+val localPropertiesFile = rootProject.file("local.properties")
+val localProperties = Properties()
+if (localPropertiesFile.exists()) {
+    localProperties.load(FileInputStream(localPropertiesFile))
+}
+
 
 android {
     namespace = "com.anjuutspam.livenessfeature"
@@ -17,8 +27,8 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
-        buildConfigField("String", "KEY", "\"emEelfCkmc4bFczSs4Ma\"")
-        buildConfigField("String", "URL", "\"http://icognis.idxsti.co.id/\"")
+        buildConfigField("String","API_KEY", "\"${localProperties.getProperty("API_KEY")}\"")
+        buildConfigField("String", "URL", "\"${localProperties.getProperty("URL_LIVENESS")}\"")
 
     }
 
@@ -72,6 +82,10 @@ dependencies {
     implementation (libs.androidx.camera.extensions)
 
     implementation(libs.glide)
+    annotationProcessor (libs.compiler)
+
+    // signature-pad
+    implementation(libs.signature.pad)
 
     //retrofit and gson
     implementation (libs.retrofit)

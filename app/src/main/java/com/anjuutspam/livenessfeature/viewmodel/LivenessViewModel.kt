@@ -7,6 +7,7 @@ import com.anjuutspam.livenessfeature.api.ApiConfig
 import com.anjuutspam.livenessfeature.db.Photo
 import com.anjuutspam.livenessfeature.db.PhotoDao
 import com.anjuutspam.livenessfeature.model.LivenessResponse
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.MultipartBody
@@ -56,5 +57,11 @@ class LivenessViewModel(application: Application, private val photoDao: PhotoDao
     private suspend fun savePhotoToDatabase(imageFile: File) {
         val photo = Photo(filePath = imageFile.absolutePath, timestamp = System.currentTimeMillis())
         photoDao.insert(photo)
+    }
+
+    fun insertPhoto(photo: Photo) {
+        viewModelScope.launch(Dispatchers.IO) {
+            photoDao.insert(photo)
+        }
     }
 }

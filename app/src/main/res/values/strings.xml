@@ -52,6 +52,7 @@
         <item>Lainnya</item>
     </string-array>
 
+    
     <string-array name="penghasilan_tambahan_pertahun">
         <item>&lt;10</item>
         <item>10 - &lt;50</item>
@@ -80,11 +81,42 @@
     <string name="lama_bekerja">Lama Bekerja</string>
     <string name="penghasilan_per_tahun">Penghasilan Per Tahun:</string>
     <string name="penghasilan_tambahan_pertahun">Penghasilan Tambahan Pertahun:</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="e_mail">E-mail</string>
     <string name="text_on_email_fragment">Masukkan email yang sudah anda daftarkan</string>
     <string name="submit_btn">Submit</string>
     <string name="lainnya">Lainnya</string>
+    <string name="pernyataan_nasabah">PERNYATAAN NASABAH / \nSTATEMENTS OF CUSTOMER</string>
+    <string name="statement_1_id">1. Dengan menandatangani Formulir Pembukaan Rekening Efek (\'FPRE\') ini, Nasabah menegaskan dan menjamin bahwa semua data dan informasi dalam FPRE ini adalah sudah benar dan lengkap.</string>
+    <string name="statement_1_en">By signing this Opening Securities Account Form (hereinafter referred to as \'Opening Account\'), Customer has confirmed and guaranteed that all data and information are correct and complete.</string>
+    <string name="statement_2_id">2. Nasabah menjamin bahwa dana dan efek yang disimpan dalam rekening dana Nasabah dan sub rekening efek Nasabah adalah milik Nasabah dan tidak berasal dan/atau bukan untuk tujuan tindakan yang termasuk pelanggaran terhadap hukum termasuk namun tidak terbatas pada tindak pidana pencucian uang, pendanaan teroris, dan / atau pendanaan proliferasi senjata pemusnah massal.</string>
+    <string name="statement_2_en">The Customer has guaranteed that funds and share(s) which deposited in the customer\'s fund account and sub securities account belongs to customer and is not derived from and / or not conducted to any action which is categorized as illegal including but not limited to Money Laundry, terrorist fundings, and / or funding for the proliferation of weapons of mass destruction activities.</string>
+    <string name="statement_3_id">3. Nasabah membaca, mengerti, dan menyetujui semua syarat dan ketentuan dalam FPRE ini, dan dengan diterimanya FPRE ini, Sekuritas tidak menjamin bahwa pembukaan rekening efek pasti akan disetujui.</string>
+    <string name="statement_3_en">The Customer has read, understood, and agreed to all terms and conditions on this Opening Account, and by the acceptance of this Opening Account, Securities does not guarantee that this Opening Account will be approved.</string>
+    <string name="statement_4_id">4. Sekuritas berhak untuk menolak dan / atau menunda FPRE ini, dengan memberikan alasannya kepada Nasabah sesuai dengan peraturan perundang-undangan.</string>
+    <string name="statement_4_en">Securities reserves the right to reject and / or delay this Opening Account by giving reasons to the customer, in accordance with the laws and regulations.</string>
+    <string name="statement_5_id">5. Dengan menandatangani FPRE ini, Nasabah menyetujui dan bersedia mentaati semua ketentuan dalam peraturan yang berlaku, termasuk namun tidak terbatas pada Peraturan Otoritas Jasa Keuangan yang mengatur mengenai Sistem Layanan Informasi Keuangan (\'SLIK\') termasuk peraturan-peraturan turunannya.</string>
+    <string name="statement_5_en">By signing this Opening Account, Customer has agreed and been willing to comply with all prevalent regulation including but not limited to Financial Service Authority Regulation pertaining financial information service system and its derivative regulation. One of customer willingness to comply with the Regulations concerning SLIK is that the Customer is agree to have his/her information in Securities related to SLIK reported by Securities into the SLIK System.</string>
+    <string name="statement_6_en">By signing this Opening Account, Customer has agreed and been willing to comply with all terms and conditions on the Customer Agreement and other related documents.</string>
+    <string name="statement_6_id">6. Dengan menandatangani FPRE ini, berarti Nasabah juga menyetujui dan bersedia mentaatisemua syarat dan ketentuan yang terdapat dalam Perjanjian Nasabah dan dokumen-dokumen yang terkait.</string>
+    <string name="statement_7_id">7. Nasabah bersedia untuk dikonfirmasi kembali mengenai kebenaran data oleh Sekuritas dan memberikan informasi / menyerahkan dokumen pendukung tambahan jika diperlukan.</string>
+    <string name="statement_7_en">The Customer will be willing to be re-confirmed about the correctness of data by Securities and gives information / provides additional supporting documents if it is necessary.</string>
+    <string name="statement_8_en">All information and/or documents that has been contained on this Opening Account are true and valid. The Customer guarantees that all photocopies of the documents submitted are concordant with original documents. The Customer is solely responsible for any information/document which the customer gives to Securities.</string>
+    <string name="statement_8_id">8. Semua informasi dan/atau dokumen yang tercantum pada FPRE ini adalah benar dan sah. Nasabah menjamin bahwa seluruh salinan dokumen yang diserahkan sesuai aslinya. Nasabah bertanggung jawab penuh atas keterangan yang Nasabah sampaikan bilamana dikemudian hari terdapat tuntutan dalam bentuk apapun dari pihak ketiga maupun atas dokumen yang Nasabah serahkan ke sekuritas.</string>
+    <string name="statement_9_en">Any changes relating to the data and information in this Opening Account, The Customer shall inform Securities no later than 3 (three) trading days after such changes occur. The Customer acquits Securities of any loss or claim that arises from other parties for my negligence submitting the changes to such data and information.</string>
+    <string name="statement_9_id">9. Segala perubahan yang berkaitan dengan data dan informasi dalam FPRE ini akan Nasabah sampaikan kepada sekuritas selambat-lambatnya 3 (tiga) hari Bursa setelah perubahan tersebut terjadi. Nasabah membebaskan sekuritas dari segala bentuk kerugian maupun tuntutan yang datang dari pihak lain atas kelalaian Nasabah menyampaikan perubahan atas data dan informasi tersebut.</string>
+    <string name="statement_10_id">10. Harta kekayaan yang Nasabah gunakan dalam melakukan transaksi efek bukan merupakan harta kekayaan sebagaimana dimaksud dalam Undang-undang No. 8 Tahun 2010 tentang Pencegahan dan Pemberantasan Tindak Pidana Pencucian Uang.</string>
+    <string name="statement_10_en">The assets which The Customer used to conduct stock transaction are not the assets referred to in Law No. 8 of 2010 concerning Prevention and Eradication of Money Laundering.</string>
+    <string name="statement_11_en">The Customer does not conduct transactions for the purposes of corruption, terrorism, other crimes and does not violate the prevailing laws and regulations.</string>
+    <string name="statement_11_id">11. Nasabah tidak bertransaksi untuk tujuan melakukan korupsi, tindakan terorisme, tindak pidana lainnya serta tidak melanggar ketentuan perundang-undangan yang berlaku.</string>
+    <string name="statement_12_id">12. Nasabah bersedia untuk tidak melibatkan sekuritas dari tuntutan hukum yang timbul, baik secara langsung maupun tidak langsung, sebagai akibat dari penggunaan dana yang diduga berasal dari hasil pelanggaran ketentuan perundang-undangan yang berlaku.</string>
+    <string name="statement_12_en">The Customer agrees not to involve Securities in lawsuits arising, whether directly or indirectly, as a result of the use of funds suspected to be from violations of prevailing laws and regulations.</string>
+    <string name="statement_13_id">13. Nasabah menjamin kebenaran identitas maupun sumber dana dari pemilik manfaat (Beneficial Owner) (Jika ada).</string>
+    <string name="statement_13_en">The Customer ensures the validity of the identity and source of funds of the Beneficial Owner (if any).</string>
+    <string name="customer_statement">PERNYATAAN NASABAH / STATEMENTS OF CUSTOMER</string>
+    <string name="ttd">Tanda Tangan Disini</string>
+    <string name="clear">Clear</string>
+    <string name="save">Save</string>
+    <string name="signature_result">signature_result</string>
 
 </resources>

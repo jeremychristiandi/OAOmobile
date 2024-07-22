@@ -50,6 +50,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Efek Saham"
+                    android:layout_marginTop="10dp"
                     android:fontFamily="@font/intersemibold"
                     android:textColor="@color/gray"/>
 
@@ -108,13 +109,11 @@
                 <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Reguler"
-                    android:textColor="@color/gray" />
+                    android:text="Reguler" />
 
                 <CheckBox
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/gray" />
+                    android:layout_height="wrap_content" />
 
                     <EditText
                         android:id="@+id/lainnya_tambahan_edit"

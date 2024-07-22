@@ -18,9 +18,13 @@ import androidx.lifecycle.ViewModelProvider
 import com.anjuutspam.livenessfeature.R
 import com.anjuutspam.livenessfeature.databinding.ActivityLivenessBinding
 import com.anjuutspam.livenessfeature.db.AppDatabase
+import com.anjuutspam.livenessfeature.db.Photo
 import com.anjuutspam.livenessfeature.model.LivenessResponse
 import com.anjuutspam.livenessfeature.viewmodel.LivenessViewModel
 import com.anjuutspam.livenessfeature.viewmodel.LivenessViewModelFactory
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.MultipartBody
 import okhttp3.RequestBody.Companion.asRequestBody
@@ -107,7 +111,7 @@ class LivenessActivity : AppCompatActivity() {
     private fun takePhoto() {
         val imageCapture = imageCapture ?: return
 
-        // Create timestamped file name
+        // Timestamp
         val photoFile = File(
             outputDirectory,
             SimpleDateFormat(FILENAME_FORMAT, Locale.US).format(System.currentTimeMillis()) + ".jpg"
@@ -125,6 +129,8 @@ class LivenessActivity : AppCompatActivity() {
                 override fun onImageSaved(output: ImageCapture.OutputFileResults) {
                     val savedUri = Uri.fromFile(photoFile)
                     currentPhotoPath = photoFile.absolutePath
+                    //save photo to db
+                    savePhotoToDatabase(photoFile.absolutePath)
 
                     // Process and send the captured image
                     processAndSendImage(savedUri)
@@ -170,5 +176,12 @@ class LivenessActivity : AppCompatActivity() {
             File(it, resources.getString(R.string.app_name)).apply { mkdirs() }
         }
         return mediaDir ?: filesDir
+    }
+
+    private fun savePhotoToDatabase(filePath: String) {
+        val photo = Photo(filePath = filePath, timestamp = System.currentTimeMillis())
+        CoroutineScope(Dispatchers.IO).launch {
+            viewModel.insertPhoto(photo)
+        }
     }
 }
